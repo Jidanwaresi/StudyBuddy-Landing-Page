@@ -10,13 +10,15 @@
     />
   </head>
   <body class="scroll-smooth">
-    <header class="flex justify-around mt-3">
-      <div class="flex gap-2 text-[#0f172a]">
+
+    <header class=" w-full flex justify-between items-center mt-2">
+      <!-- navbar starts here -->
+      <div class="flex gap-2 text-[#0f172a] ml-2.5">
         <i class="ri-graduation-cap-fill"></i>
         <h1>StudyBuddy</h1>
       </div>
 
-      <nav class="md:flex gap-7 sm:hidden ">
+      <nav class="md:flex gap-7 hidden ">
         <a href="#">Home</a>
         <a href="#">Features</a>
         <a href="#">How It Works</a>
@@ -24,7 +26,11 @@
         <a href="#">Contact </a>
       </nav>
 
-      <button class="bg-blue-700 pt-2.5 pb-2.5 pl-2 pr-2 rounded-lg text-center text-white text-xs cursor-pointer  hover:bg-blue-500 transition-all duration-200 "> Get Started </button>
+      <button class="bg-blue-700 pt-2.5 pb-2.5 pl-2 pr-2 rounded-lg text-center text-white text-xs cursor-pointer  hover:bg-blue-500 transition-all duration-200 mr-3 hidden md:block"> Get Started </button>
+      <div class="md:hidden">
+        <a class="text-4xl mr-1.5"  href="#">&#8801;</a>
+      </div>
+      <!-- navbar ends here -->
     </header>
     <main></main>
     <footer></footer>
