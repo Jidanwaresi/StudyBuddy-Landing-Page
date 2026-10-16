@@ -1,176 +1,217 @@
 <!doctype html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./src/output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
-</head>
+  <body class="scroll-smooth">
+    <header class="w-full flex justify-between items-center mt-2">
+      <!-- navbar starts here -->
+      <div class="flex gap-2 text-[#0f172a] ml-2.5">
+        <i class="ri-graduation-cap-fill"></i>
+        <h1 class="font-bold">StudyBuddy</h1>
+      </div>
 
-<body class="scroll-smooth">
-  <header class="w-full flex justify-between items-center mt-2">
-    <!-- navbar starts here -->
-    <div class="flex gap-2 text-[#0f172a] ml-2.5">
-      <i class="ri-graduation-cap-fill"></i>
-      <h1 class="font-bold">StudyBuddy</h1>
-    </div>
-
-    <nav class="md:flex gap-7 hidden">
-      <!-- <a class="hover:underline decoration-gray-500 underline-offset-8" href="#">Home</a>
+      <nav class="md:flex gap-7 hidden">
+        <!-- <a class="hover:underline decoration-gray-500 underline-offset-8" href="#">Home</a>
         <a class="hover:underline decoration-gray-500 underline-offset-8"      href="#">Features</a>
         <a class="hover:underline decoration-gray-500 underline-offset-8"      href="#">How It Works</a>
         <a class="hover:underline decoration-gray-500 underline-offset-8"      href="#">Testimonials</a>
         <a class="hover:underline decoration-gray-500 underline-offset-8"      href="#">Contact </a> -->
 
-      <a class="relative font-normal after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full"
-        href="#">Home</a>
-      <a class="relative font-normal after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full"
-        href="#">Features</a>
-      <a class="relative font-normal after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full"
-        href="#">How It Works</a>
-      <a class="relative font-normal after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full"
-        href="#">Testimonials</a>
-      <a class="relative font-normal after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full"
-        href="#">Contact
-      </a>
-    </nav>
+        <a
+          class="relative font-normal after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full"
+          href="#"
+          >Home</a
+        >
+        <a
+          class="relative font-normal after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full"
+          href="#"
+          >Features</a
+        >
+        <a
+          class="relative font-normal after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full"
+          href="#"
+          >How It Works</a
+        >
+        <a
+          class="relative font-normal after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full"
+          href="#"
+          >Testimonials</a
+        >
+        <a
+          class="relative font-normal after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gray-500 after:transition-all after:duration-300 hover:after:w-full"
+          href="#"
+          >Contact
+        </a>
+      </nav>
 
-    <button
-      class="bg-blue-700 pt-2.5 pb-2.5 pl-3.5 pr-3.5 rounded-lg text-center text-white text-xs cursor-pointer hover:bg-blue-500 transition-all duration-200 mr-3 hidden md:block">
-      Get Started
-    </button>
-    <div class="md:hidden">
-      <a class="text-4xl mr-1.5" href="#">&#8801;</a>
-    </div>
-    <!-- navbar ends here -->
-  </header>
-  <main>
-    <section
-      class="w-full mt-2.5 bg-white bg-[linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.9)),url('../assets/hero-img.png')] bg-cover bg-right bg-no-repeat pt-10 pb-10 lg:pt-0 lg:pb-0 lg:aspect-[1024/440] lg:bg-[linear-gradient(to_right,#ffffff_32%,rgba(255,255,255,0)_60%),url('../assets/hero-img.png')] lg:bg-contain lg:bg-right">
-      <div class="w-full flex flex-col justify-center gap-7 px-6 lg:w-1/2 lg:h-full lg:p-10 lg:px-10 lg:bg-none">
-        <div>
-          <p class="text-xs font-mono text-blue-700 font-semibold mb-1.5">
-            LEARN PLAN ACHIEVE
-          </p>
-          <h1 class="text-5xl">
-            A Smarter Way to <br /><span class="text-blue-700">Learn </span>Every Day
-          </h1>
-        </div>
-
-        <div>
-          <p class="text-gray-500 font-medium">
-            StudyBuddy helps you stay organized, focused, and <br />
-            motivated - so you can achieve your goals, one <br />
-            step at a time.
-          </p>
-        </div>
-
-        <div class="flex gap-5">
-          <button
-            class="flex items-center gap-0.5 bg-white text-blue-600 px-4 py-2 rounded-lg text-center border font-medium border-blue-500 text-xs cursor-pointer hover:bg-blue-700 transition-all duration-200 hover:text-white">
-            Get Started
-            <i class="ri-arrow-right-line text-xl leading-none"></i>
-          </button>
-          <button
-            class="flex items-center gap-0.5 bg-white text-blue-600 px-4 py-2 rounded-lg text-center border font-medium border-blue-500 text-xs cursor-pointer hover:bg-blue-700 transition-all duration-200 hover:text-white">
-            <i class="ri-play-circle-fill text-xl leading-none"></i> Watch
-            Video
-          </button>
-        </div>
-
-        <div class="flex divide-x-2 divide-gray-500">
-          <div class="pr-5">
-            <h6 class="font-bold text-lg">10K+</h6>
-            <p class="font-normal text-gray-500">Active Users</p>
-          </div>
-
-          <div class="px-5">
-            <h6 class="font-bold text-lg">
-              4.8<i class="ri-star-s-fill"></i>
-            </h6>
-            <p class="font-normal text-gray-500">User Rating</p>
-          </div>
-
-          <div class="pl-5">
-            <h6 class="font-bold text-lg">100%</h6>
-            <p class="font-normal text-gray-500">Focused Learning</p>
-          </div>
-        </div>
+      <button
+        class="bg-blue-700 pt-2.5 pb-2.5 pl-3.5 pr-3.5 rounded-lg text-center text-white text-xs cursor-pointer hover:bg-blue-500 transition-all duration-200 mr-3 hidden md:block"
+      >
+        Get Started
+      </button>
+      <div class="md:hidden">
+        <a class="text-4xl mr-1.5" href="#">&#8801;</a>
       </div>
-    </section>
-
-    <section class="flex flex-col justify-center items-center mt-3">
-      <div class="self-center">
-        <p class="text-center text-violet-500 text-sm font-semibold">
-          WHY CHOOSE US
-        </p>
-        <h2 class="text-center text-2xl font-bold">
-          Everything You Need in One Place
-        </h2>
-        <p class="text-center text-gray-500 font-semibold mt-1">
-          From planning your day to tracking your progress, StudyBuddy gives
-          you the tools <br />
-          to stay ahead.
-        </p>
-      </div>
-
-      <div class="mt-5 mb-10 grid grid-cols-1 lg:grid-cols-4 gap-14">
+      <!-- navbar ends here -->
+    </header>
+    <main>
+      <section
+        class="w-full mt-2.5 bg-white bg-[linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.9)),url('../assets/hero-img.png')] bg-cover bg-right bg-no-repeat pt-10 pb-10 lg:pt-0 lg:pb-0 lg:aspect-[1024/440] lg:bg-[linear-gradient(to_right,#ffffff_32%,rgba(255,255,255,0)_60%),url('../assets/hero-img.png')] lg:bg-contain lg:bg-right"
+      >
         <div
-          class="flex flex-col items-center justify-center text-center gap-2 px-10 py-4 border border-gray-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.15)] p-6 rounded-lg bg-white cursor-pointer transition-shadow duration-300 ease-in-out">
-          <div class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-pink-300">
-            <i class="fa-regular fa-calendar-days"></i>
+          class="w-full flex flex-col justify-center gap-7 px-6 lg:w-1/2 lg:h-full lg:p-10 lg:px-10 lg:bg-none"
+        >
+          <div>
+            <p class="text-xs font-mono text-blue-700 font-semibold mb-1.5">
+              LEARN PLAN ACHIEVE
+            </p>
+            <h1 class="text-5xl">
+              A Smarter Way to <br /><span class="text-blue-700">Learn </span
+              >Every Day
+            </h1>
           </div>
-          <h3 class="font-bold">Smart Planner</h3>
-          <p class="text-gray-500 font-normal">
-            Plan your study schedule <br />
-            effortlessly.
+
+          <div>
+            <p class="text-gray-500 font-medium">
+              StudyBuddy helps you stay organized, focused, and <br />
+              motivated - so you can achieve your goals, one <br />
+              step at a time.
+            </p>
+          </div>
+
+          <div class="flex gap-5">
+            <button
+              class="flex items-center gap-0.5 bg-white text-blue-600 px-4 py-2 rounded-lg text-center border font-medium border-blue-500 text-xs cursor-pointer hover:bg-blue-700 transition-all duration-200 hover:text-white"
+            >
+              Get Started
+              <i class="ri-arrow-right-line text-xl leading-none"></i>
+            </button>
+            <button
+              class="flex items-center gap-0.5 bg-white text-blue-600 px-4 py-2 rounded-lg text-center border font-medium border-blue-500 text-xs cursor-pointer hover:bg-blue-700 transition-all duration-200 hover:text-white"
+            >
+              <i class="ri-play-circle-fill text-xl leading-none"></i> Watch
+              Video
+            </button>
+          </div>
+
+          <div class="flex divide-x-2 divide-gray-500">
+            <div class="pr-5">
+              <h6 class="font-bold text-lg">10K+</h6>
+              <p class="font-normal text-gray-500">Active Users</p>
+            </div>
+
+            <div class="px-5">
+              <h6 class="font-bold text-lg">
+                4.8<i class="ri-star-s-fill"></i>
+              </h6>
+              <p class="font-normal text-gray-500">User Rating</p>
+            </div>
+
+            <div class="pl-5">
+              <h6 class="font-bold text-lg">100%</h6>
+              <p class="font-normal text-gray-500">Focused Learning</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col justify-center items-center mt-3">
+        <div class="self-center">
+          <p class="text-center text-violet-500 text-sm font-semibold">
+            WHY CHOOSE US
+          </p>
+          <h2 class="text-center text-2xl font-bold">
+            Everything You Need in One Place
+          </h2>
+          <p class="text-center text-gray-500 font-semibold mt-1">
+            From planning your day to tracking your progress, StudyBuddy gives
+            you the tools <br />
+            to stay ahead.
           </p>
         </div>
 
-        <div
-          class="flex flex-col items-center justify-center text-center gap-2 px-10 py-4 border border-gray-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.15)] p-6 rounded-lg bg-white cursor-pointer transition-shadow duration-300 ease-in-out">
-          <div class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-blue-300">
-            <i class="fa-solid fa-signal" style="color: rgb(4, 54, 95)"></i>
+        <div class="mt-5 mb-10 grid grid-cols-1 lg:grid-cols-4 gap-14">
+          <div
+            class="flex flex-col items-center justify-center text-center gap-2 px-10 py-4 border border-gray-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.15)] p-6 rounded-lg bg-white cursor-pointer transition-shadow duration-300 ease-in-out"
+          >
+            <div
+              class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-pink-300"
+            >
+              <i class="fa-regular fa-calendar-days"></i>
+            </div>
+            <h3 class="font-bold">Smart Planner</h3>
+            <p class="text-gray-500 font-normal">
+              Plan your study schedule <br />
+              effortlessly.
+            </p>
           </div>
-          <h3 class="font-bold">Track Progress</h3>
-          <p class="text-gray-500 font-normal">
-            See how far you've come and <br />
-            stay motivated.
-          </p>
-        </div>
 
-        <div
-          class="flex flex-col items-center justify-center text-center gap-2 px-10 py-4 border border-gray-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.15)] p-6 rounded-lg bg-white cursor-pointer transition-shadow duration-300 ease-in-out">
-          <div class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-green-300">
-            <i class="fa-solid fa-users" style="color: rgb(9, 154, 109)"></i>
+          <div
+            class="flex flex-col items-center justify-center text-center gap-2 px-10 py-4 border border-gray-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.15)] p-6 rounded-lg bg-white cursor-pointer transition-shadow duration-300 ease-in-out"
+          >
+            <div
+              class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-blue-300"
+            >
+              <i class="fa-solid fa-signal" style="color: rgb(4, 54, 95)"></i>
+            </div>
+            <h3 class="font-bold">Track Progress</h3>
+            <p class="text-gray-500 font-normal">
+              See how far you've come and <br />
+              stay motivated.
+            </p>
           </div>
-          <h3 class="font-bold">Distraction Free</h3>
-          <p class="text-gray-500 font-normal">
-            Stay focused with a clean <br />
-            and minimal interface.
-          </p>
-        </div>
 
-        <div
-          class="flex flex-col items-center justify-center text-center gap-2 px-10 py-4 border border-gray-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.15)] p-6 rounded-lg bg-white cursor-pointer transition-shadow duration-300 ease-in-out">
-          <div class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-yellow-300">
-            <i class="fa-solid fa-star" style="color: rgb(222, 175, 6)"></i>
+          <div
+            class="flex flex-col items-center justify-center text-center gap-2 px-10 py-4 border border-gray-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.15)] p-6 rounded-lg bg-white cursor-pointer transition-shadow duration-300 ease-in-out"
+          >
+            <div
+              class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-green-300"
+            >
+              <i class="fa-solid fa-users" style="color: rgb(9, 154, 109)"></i>
+            </div>
+            <h3 class="font-bold">Distraction Free</h3>
+            <p class="text-gray-500 font-normal">
+              Stay focused with a clean <br />
+              and minimal interface.
+            </p>
           </div>
-          <h3 class="font-bold">Achieve Goals</h3>
-          <p class="text-gray-500 font-normal">
-            Turn your dreams into <br />
-            reality, one step at a time.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- <section class="flex flex-col mt-3 w-full px-3">
+          <div
+            class="flex flex-col items-center justify-center text-center gap-2 px-10 py-4 border border-gray-300 hover:shadow-[0_0_10px_rgba(0,0,0,0.15)] p-6 rounded-lg bg-white cursor-pointer transition-shadow duration-300 ease-in-out"
+          >
+            <div
+              class="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-yellow-300"
+            >
+              <i class="fa-solid fa-star" style="color: rgb(222, 175, 6)"></i>
+            </div>
+            <h3 class="font-bold">Achieve Goals</h3>
+            <p class="text-gray-500 font-normal">
+              Turn your dreams into <br />
+              reality, one step at a time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="flex flex-col mt-3 w-full px-3">
       <div class="flex flex-col items-start">
         <p>EXPLORE</p>
         <h2>Popular Tools</h2>
@@ -229,13 +270,140 @@
 
     </section> -->
 
-  </main>
+      <!-- Image crousal section -->
 
-  <footer></footer>
-  <!-- <script src="https://unpkg.com/lucide@latest"></script>
+      <section class="w-full md:h-[50vh] h-[40vh] bg-blue-100 flex flex-col">
+        <div class="w-full pt-4">
+          <p
+            class="text-center uppercase text-[1rem] md:text-[1.5rem] font-semibold text-blue-800"
+          >
+            Testimonials
+          </p>
+          <h1 class="md:text-4xl text-2xl font-bold text-center mt-2">
+            What Our Users Say
+          </h1>
+        </div>
+
+        <!-- Carousel Area -->
+        <div
+          class="flex justify-between flex-1 items-center py-8 px-4 gap-4 md:px-32"
+        >
+          <div
+            class="bg-white rounded-full w-14 h-14 flex justify-center items-center cursor-pointer"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div
+            class="flex md:w-1/2 w-[80%] bg-white h-[70%] items-center justify-evenly rounded-xl gap-2 p-4"
+          >
+            <img
+              class="md:w-24 md:h-24 w-12 h-12 rounded-full"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9XIg1S6fleoUpItfeyXw5UXzK7lK2dIA3Iv4ZqIznOQ&s=10"
+              alt=""
+            />
+
+            <div class="flex flex-col md:w-[60%]">
+              <div
+                class="flex justify-center items-center text-[10px] md:text-sm"
+              >
+                "This application provides an exceptionally curated learning
+                environment that seamlessly transforms academic rigore."
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="md:text-normal text-[12px] font-semibold">
+                  <p>Sneha Verma</p>
+                  <p>BCA Student</p>
+                </div>
+                <div class="flex text-[10px] md:text-normal">
+                  <i class="fa-solid fa-star text-yellow-400"></i
+                  ><i class="fa-solid fa-star text-yellow-400"></i
+                  ><i class="fa-solid fa-star text-yellow-400"></i
+                  ><i class="fa-solid fa-star text-yellow-400"></i
+                  ><i class="fa-solid fa-star text-yellow-400"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-full w-14 h-14 flex justify-center items-center cursor-pointer"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="flex justify-center md:py-6 text-[10px] py-4">
+          <i class="fa-solid fa-circle text-blue-400"></i>
+          <i class="fa-solid fa-circle text-gray-400"></i>
+          <i class="fa-solid fa-circle text-gray-400"></i>
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-full bg-white h-[50vh] flex flex-col">
+      <div
+        class="flex-1 bg-cover bg-center md:flex-row flex flex-col justify-evenly md:items-center py-6"
+        style="background-image: url(&quot;./assets/footer.avif&quot;)"
+      >
+        <div class="flex-1 flex flex-col gap-2 px-12">
+          <p class="text-white text-normal font-semibold uppercase mt-4">
+            Stay Updated
+          </p>
+          <p class="text-white text-xl md:text-3xl font-extrabold">
+            Join Our Learning Community
+          </p>
+          <p class="text-white md:text-lg text-sm">
+            Get study tips, productivity hacks, and exclusive updates straight
+            to your inbox
+          </p>
+        </div>
+        <div class="flex-1 flex justify-center items-center">
+          <div class="flex gap-1 bg-slate-500 rounded-xl mt-4">
+            <input
+              class="bg-white md:px-12 px-4 py-2 rounded-xl"
+              type="email"
+              placeholder="Enter your email address"
+            />
+            <button class="text-white py-2 md:px-8 px-4 rounded-xl bg-blue-600">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-1">
+        <div
+          class="md:flex justify-between items-center w-[90%] border-b border-gray-400 mx-auto h-[70%]"
+        >
+          <div class="flex gap-2 text-[#0f172a] text-3xl justify-center my-6">
+            <i class="ri-graduation-cap-fill"></i>
+            <h1 class="font-bold">StudyBuddy</h1>
+          </div>
+
+          <div
+            class="flex justify-center text-sm md:text-normal items-center gap-2 md:gap-6"
+          >
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">How it Works</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <div class="flex justify-center items-center gap-4 text-xl my-8">
+            <i class="fa-brands fa-github cursor-pointer"></i>
+            <i class="fa-brands fa-instagram cursor-pointer"></i>
+            <i class="fa-brands fa-square-twitter cursor-pointer"></i>
+            <i class="fa-brands fa-linkedin cursor-pointer"></i>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center py-4">
+          <p class="text-gray-600">© 2026 StudyBuddy</p>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();
     </script> -->
-</body>
-
+  </body>
 </html>
