@@ -783,6 +783,12 @@
   .active\:bg-blue-400:active {
     background-color: var(--color-blue-400);
   }
+  .active\:bg-blue-500:active {
+    background-color: var(--color-blue-500);
+  }
+  .active\:text-white:active {
+    color: var(--color-white);
+  }
   @media (width >= 48rem) {
     .md\:block {
       display: block;
@@ -856,6 +862,9 @@
     }
     .md\:text-\[1\.5rem\] {
       font-size: 1.5rem;
+    }
+    .md\:active\:bg-blue-500:active {
+      background-color: var(--color-blue-500);
     }
   }
   @media (width >= 64rem) {
