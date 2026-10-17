@@ -295,7 +295,7 @@
                 environment that seamlessly transforms academic rigore."
               </div>
               <div class="flex justify-between items-center">
-                <div class="md:text-normal text-[12px] font-semibold">
+                <div class="mt-2 md:text-normal text-[12px] font-semibold">
                   <p>Sneha Verma</p>
                   <p>BCA Student</p>
                 </div>
@@ -342,14 +342,16 @@
         </div>
         <div class="flex-1 flex justify-center items-center">
           <div class="flex gap-1 bg-slate-500 rounded-xl mt-4">
+            <form action="#" id="subsribeForm" onsubmit="handleSubscribe(event)">
+            <label for="email"></label>
             <input
               class="bg-white md:px-12 px-4 py-2 rounded-xl"
-              type="email"
-              placeholder="Enter your email address"
+              type="email" id="email"
+              placeholder="Enter your email address" required
             />
-            <button class="text-white py-2 md:px-8 px-4 rounded-xl bg-blue-600">
-              Subscribe
-            </button>
+            <button class= "text-white py-2 md:px-8 px-4 rounded-xl bg-blue-600 cursor-pointer active:bg-blue-400">Subscribe</button>
+            </form>
+
           </div>
         </div>
       </div>
@@ -364,7 +366,7 @@
           </div>
 
           <div
-            class="flex justify-center text-sm md:text-normal items-center gap-2 md:gap-6"
+            class="flex justify-center text-sm md:text-normal items-center gap-3 md:gap-6"
           >
             <a href="#">Home</a>
             <a href="#">Features</a>
@@ -386,9 +388,16 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-      lucide.createIcons();
-    </script> -->
+
+<script>
+
+function handleSubscribe(event){
+  event.preventDefault();
+  alert("Thank you! You have successfully subscribed to our newsletter.");
+  document.getElementById("subsribeForm").reset();
+}
+
+</script>
+
   </body>
 </html>
